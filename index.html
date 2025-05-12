@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Choosing Love, Choosing Respect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary: #003366;
+      --accent: #0066cc;
+      --bg: #f4f6f8;
+      --text: #1e1e1e;
+      --heading: #111;
+      --quote-bg: #e0ebf8;
+      --footer-bg: #001f3f;
+      --transition: all 0.3s ease;
+    }
+
+    [data-theme="dark"] {
+      --bg: #121212;
+      --text: #f0f0f0;
+      --heading: #ffffff;
+      --quote-bg: #1f2b3d;
+      --footer-bg: #000a1a;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      transition: var(--transition);
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.85;
+    }
+
+    .theme-toggle {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: #ffffff22;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.2s ease;
+    }
+
+    .theme-toggle:hover {
+      background: #ffffff44;
+    }
+
+    nav {
+      background: #ffffffcc;
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      padding: 1rem;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: var(--transition);
+    }
+
+    section.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section h2 {
+      color: var(--heading);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    p, li {
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+
+    .quote {
+      background: var(--quote-bg);
+      border-left: 5px solid var(--primary);
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: var(--footer-bg);
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      section h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Choosing Love, Choosing Respect</h1>
+    <p>A Catholic Teen’s Reflection on Chastity, Faith, and True Freedom</p>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+  </header>
+
+  <nav>
+    <a href="#relationships">Relationships</a>
+    <a href="#sexuality">Teen Sexuality</a>
+    <a href="#pressure">Peer Pressure</a>
+    <a href="#intimacy">Church Teaching</a>
+    <a href="#freedom">Chastity & Freedom</a>
+    <a href="#message">Message to Teens</a>
+    <a href="#citations">Citations</a>
+  </nav>
+
+  <main>
+    <section id="relationships">
+      <h2>Why Relationships Matter More Than We Think</h2>
+      <p>As teenagers, we’re figuring out who we are, who we want to be, and who we want to share our lives with, whether that’s our best friends, our families, or a romantic partner. Relationships shape our identity. They teach us about trust, loyalty, patience, and sacrifice.
+But in a world that often confuses love with lust and connection with attention, it’s easy to get lost in the noise. The truth is, we were created for deep, lasting, life-giving love. That’s the kind of love God wants for us—a love that mirrors His own: selfless, faithful, and true.
+.</p>
+    </section>
+
+    <section id="sexuality">
+      <h2>Teen Sexuality Today: The Facts You Don’t Always Hear</h2>
+      <p>According to a 2022 report by Statistics Canada, around 24% of teens between the ages of 15 and 19 have had sexual intercourse. Many of those teens say they felt pressured, unprepared, or unsure. At the same time, the number of teens affected by STIs has increased, and many admit they didn't fully understand the emotional impact of becoming sexually active.
+Social media, music, and shows often portray sex as casual and consequence-free—but that’s not the full picture. There’s a gap between what’s portrayed and what teens really experience. The more we learn, the more we realize how important it is to approach sexuality with care, wisdom, and purpose.
+</p>
+    </section>
+
+    <section id="pressure">
+      <h2>Peer Pressure, Pop Culture, and the Push to Fit In</h2>
+      <p>“Everyone’s doing it.”
+ “You’re so old-fashioned.”
+ “Why wait?”
+These are just a few of the phrases teens hear when they choose to live differently. Whether it’s direct peer pressure or the silent influence of TikTok trends and celebrity relationships, the message is loud: if you’re not sexually active, you’re missing out.
+But here’s the truth: choosing chastity isn’t about missing out. It’s about saying yes to love that’s authentic and lasting. It’s about setting your own boundaries instead of letting others define them for you. Living chastely takes courage, but it also brings peace, clarity, and a stronger sense of self-worth.
+</p>
+    </section>
+
+    <section id="intimacy">
+      <h2>What the Church Really Teaches About Sex and Intimacy</h2>
+      <p>Contrary to what some might believe, the Catholic Church doesn’t see sex as something bad or shameful. In fact, it sees sex as something beautiful—a sacred gift from God that expresses the total giving of oneself to another within marriage.
+According to the Catechism of the Catholic Church, sexual intimacy is meant to unite a husband and wife and open their hearts to the gift of life. It’s more than a physical act—it’s a powerful, spiritual sign of love and trust.
+Outside of marriage, sex becomes disconnected from that full purpose. The Church teaches that we are called to treat sex not casually, but with reverence and responsibility. It’s not about restriction—it’s about making sure that our actions reflect our deepest values.
+</p>
+    </section>
+
+    <section id="freedom">
+      <h2>Chastity: A Path of Freedom, Not Fear</h2>
+      <p>Chastity is often misunderstood. People think it just means saying “no” to sex—but it’s so much more than that. Chastity is about living in a way that honors your dignity and the dignity of others. It’s about love that’s patient, respectful, and real.
+God’s moral laws about sex aren’t there to trap us—they’re there to protect us. Like any good parent, God sets boundaries because He loves us. When we live chastely, we’re not denying love—we’re preparing for the fullness of it. Chastity helps us love like Christ: selflessly, purely, and freely.
+</p>
+    </section>
+
+    <section id="message">
+      <h2>From One Teen to Another: You’re Not Alone</h2>
+      <p>You don’t have to give in to pressure. You don’t have to compromise your values. And you’re definitely not alone in choosing a different path. Choosing chastity doesn’t mean you’re behind—it means you’re strong, wise, and thinking about the kind of love you truly deserve.
+One day, you’ll be so glad you waited. Real love is never rushed, and your heart is too valuable to be handled casually. So hold your head high. You’re choosing something powerful—and you’re never walking that road alone.
+
+      <p>
+    </section>
+
+    <section id="citations">
+      <h2>Works Cited (MLA Format)</h2>
+      <ul>
+        <li>Catholic Church. <em>Catechism of the Catholic Church</em>. 2nd ed., Libreria Editrice Vaticana, 2019.</li>
+        <li>Statistics Canada. “Canadian Community Health Survey – Sexual Health.” 2022. <a href="https://www.statcan.gc.ca">www.statcan.gc.ca</a>.</li>
+        <li>Evert, Jason. <em>Chastity: The Hidden Power</em>. Totus Tuus Press, 2021.</li>
+        <li>Life Teen. “What Does the Church Actually Say About Sex?” <a href="https://www.lifeteen.com">LifeTeen.com</a>.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Chastity Blog — Written by Grade 10 Catholic Student Contributors.
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      const button = document.querySelector(".theme-toggle");
+      if (currentTheme === "dark") {
+        document.documentElement.removeAttribute("data-theme");
+        button.textContent = "🌙 Dark Mode";
+      } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+        button.textContent = "☀️ Light Mode";
+      }
+    }
+
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
